@@ -1,10 +1,9 @@
-export default function Home() {
+export default function CV() {
     return <html>
         <body>
             <h1>
-                Bienvenue dans mon site
+                Bienvenue sur mon site
             </h1>
         </body>
     </html>
-
 }
