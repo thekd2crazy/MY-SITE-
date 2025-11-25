@@ -2,7 +2,7 @@ export default function CV() {
     return <html>
         <body>
             <h1>
-                Bienvenue sur mon site
+                MON CV
             </h1>
         </body>
     </html>
