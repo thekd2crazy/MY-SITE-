@@ -1,5 +1,3 @@
-
-
 FROM node:lts AS base
 WORKDIR /app
 COPY package*.json ./

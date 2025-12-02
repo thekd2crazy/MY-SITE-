@@ -28,17 +28,21 @@ export default function RootLayout({
     <html lang="fr">
 
 
-      <Navbar />
+
 
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
+
         {children}
+
+        <Footer title="   My Website page   " date="   2025   ">  Tous droits réservés. </Footer>
       </body>
 
 
-      <Footer title="   My Website page   " date="   2025   ">  Tous droits réservés. </Footer>
+
     </html>
   );
 }

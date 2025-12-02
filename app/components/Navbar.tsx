@@ -12,7 +12,7 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header>
+        <>
             <nav className="bg-black border-b shadow-sm">
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="flex justify-between items-center h-16">
@@ -76,6 +76,6 @@ export default function Navbar() {
                 )}
             </nav>
 
-        </header>
+        </>
     );
 }

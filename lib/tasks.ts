@@ -15,7 +15,7 @@ export async function addTask(form: FormData) {
         title: String(form.get('title')),
         done: false,
     })
-    redirect((await headers()).get('referer') ?? '/')
+    redirect((await headers()).get('referer') ?? '/') // pour que ça ne rénvoit dans le site 
 }
 
 export async function editTask(form: FormData) {
