@@ -8,7 +8,7 @@ export default async function TodoApp() {
                 <label>
                     New task: <input name="title" />
                 </label>
-                <button>Submit</button>
+                <button className='border-r-red-500 hover:bg-red-500 '>Submit</button>
             </form>
             <ul>
                 {tasks.map((task, id) => (
