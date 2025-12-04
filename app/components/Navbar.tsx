@@ -28,6 +28,7 @@ export default function Navbar() {
                             <Link href="/about" className="block hover:text-orange-500">À propos</Link>
                             <Link href="/contact" className="block hover:text-orange-500">Contact</Link>
                             <Link href="/blog" className="block hover:text-orange-500">Blog</Link>
+                            <Link href="/tasks" className="block hover:text-orange-500">Tasks</Link>
                         </div>
 
                         {/* Hamburger */}

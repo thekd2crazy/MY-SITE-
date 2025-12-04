@@ -1,9 +1,10 @@
 export default function BLOG() {
-    return <html>
-        <body>
-            <h1>
-                MON Blog
-            </h1>
-        </body>
-    </html>
+    return (
+        <h1>
+            MON Blog
+        </h1>
+
+    )
+
+
 }
