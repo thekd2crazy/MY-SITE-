@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from "react";
 
 
@@ -25,5 +26,5 @@ export default function TypingEffect({ text, speed = 60 }: Props) {
         return () => clearInterval(interval);
     }, [text, speed]);
 
-    return <span>{displayedText}</span>;
+    return <span className="text-[#ff7200] text-[60px]">{displayedText}</span>;
 }

@@ -1,3 +1,5 @@
+"use client "
+import TypingEffect from "./components/TypingEffet";
 
 export default function Home() {
     return (
@@ -11,7 +13,7 @@ export default function Home() {
 
                 <h1 className="font-[Times_New_Roman] text-[45px] text-white pl-[10px] mt-[9%] tracking-[2px]">
                     Web Design & <br />
-                    <span className="text-[#ff7200] text-[60px]">Development</span> <br />
+                    <TypingEffect text="Developement" /> <br />
                     Course
                 </h1>
 
