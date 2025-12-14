@@ -1,7 +1,9 @@
-import { getCurrentUser } from "../components/getCurrentUSER"
+import { getCurrentUser } from "../components/Current"
+import { compare } from "bcryptjs"
+import { cookies } from "next/headers"
 
 export async function Admin() {
-    const user = await getCurrentUser()
+    const user = await getCurrentUser
     if (!user) {
         return <p>You need to log in.</p>
     }
