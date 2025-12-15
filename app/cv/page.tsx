@@ -1,8 +1,10 @@
 'user client'
-import CvEntry from "../components/CvEntry"
+import CvEntry from "../components/CvEntry";
+import Logos from "../components/Logos";
 
 
 export default function CV() {
+    const iconSize = 50;
     return (
         <>
 
@@ -36,7 +38,7 @@ export default function CV() {
             </section>
 
             <section>
-
+                <Logos />
             </section>
         </>
     )

@@ -1,35 +1,31 @@
-"use client "
+"use client"
+import { useRouter } from "next/navigation";
 import TypingEffect from "./components/TypingEffet";
 
 export default function Home() {
+    const router = useRouter();
     return (
-        <div className=" h-screen l-screen w-full bg-center bg-cover h-[109vh]"
-            style={{
-                backgroundImage: "url('/chemin/vers/image.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}>
-            <div className="w-[1200px] h-auto mx-auto mt-[80px] ml-[147px]">
 
-                <h1 className="font-[Times_New_Roman] text-[45px] text-white pl-[10px] mt-[9%] tracking-[2px]">
-                    Web Design & <br />
-                    <TypingEffect text="Developement" /> <br />
-                    Course
-                </h1>
+        <section className="max-w-7xl mx-auto px-6 py-9">
 
-                <p className="mt-[3%] font-[Arial] pl-[15px] pb-[20px] tracking-[1.2px] leading-[30px] text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nisi dicta ex ducimus animi,
-                    excepturi, sit <br />
-                    eos error, vitae aperiam incidunt. Magni hic quisquam minima doloremque. Sint cumque
-                    quis illo ? <br />
-                    ma femme est la plus jolie elle s'appelle Carola !
-                </p>
+            <h1 className=" text-4xl space-y-5 md:space-y-2 md:text-3xl font-[Times_New_Roman]   text-white  mt-[5%] tracking-[2px]">
+                Je suis  <br />
+                <TypingEffect text="STEVE" /> <br />
+                étudiant en ingénieurie informatique !
+            </h1>
 
-                <button className="w-[160px] h-[40px] bg-[#ff7200] border-none rounded-[10px] mb-[10px] ml-[15px] text-[18px] cursor-pointer transition duration-300 ease-in-out hover:bg-white ">
-                    <a className="no-underline text-black transition duration-300 ease-in-out">JOIN US</a>
-                </button>
-            </div>
-        </div>
+            <p className="mt-[5%] md:mt-[3%] font-[Arial]  pb-[20px] mx-auto tracking-[1.2px] leading-[30px] text-white text-base  md:text-lg">
+                Étudiant en ingénierie, passionné par la technologie et la résolution de problèmes, je développe mes compétences à travers des projets académiques et personnels. <br />
+                Curieux et rigoureux, j’aime transformer des idées en solutions concrètes. <br />
+                Ce portfolio présente mes réalisations, mes compétences et mon parcours. N’hésitez pas à me contacter pour toute opportunité de stage ou de collaboration.
+
+            </p>
+
+            <button onClick={() => router.push("/contact")} className="w-[160px] h-[40px] bg-[#ff7200] border-none rounded-[10px] mb-[10px]  text-[18px] cursor-pointer transition duration-300 ease-in-out hover:bg-white ">
+                <a className="no-underline text-black transition duration-300 ease-in-out">CONTACT ME</a>
+            </button>
+        </section>
+
 
     );
 }

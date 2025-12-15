@@ -33,7 +33,12 @@ export default function RootLayout({
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{ backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('https://jardinage-infos.com/wp-content/uploads/2022/09/26462.jpg')" }}
+        style={{
+          backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('https://jardinage-infos.com/wp-content/uploads/2022/09/26462.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
+        }}
       >
         <Navbar />
 
