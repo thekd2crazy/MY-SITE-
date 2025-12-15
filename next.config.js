@@ -7,4 +7,26 @@ module.exports = {
             "http://localhost"
         ],
     },
+
+    images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "tse3.mm.bing.net",
+      },
+
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+      },
+      
+      {
+        protocol: "https",
+        hostname: "media-exp1.licdn.com",
+      },
+    ],
+  },
 };
+
+
+
