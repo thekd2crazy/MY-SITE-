@@ -27,11 +27,14 @@ export default function CvEntry(props: CvEntry) {
                     duration-300
                     hover:-translate-y-1
                 ">
-                <div className="flex items-center gap-4 ">
-                    <Image src={props.image} alt={`${props.employer} logo`} fill className="relative w-[3px] h-[3px] rounded-full overflow-hidden" />
-                </div>
+
                 <h3 className="text-sm md:text-base text-amber-100 ">{props.title}  {props.employer}</h3>
-                <ul className="text-sm md:text-base mt-4 text-amber-50 list-disc list-inside"> {props.children}</ul>
+                <div className="flex justify-between items-center space-x-4">
+                    <ul className="text-sm md:text-base mt-4 text-amber-50 list-disc list-inside"> {props.children}</ul>
+
+                    <div className="flex items-center gap-3 "><img src={props.image} alt={`${props.employer} logo`} className=" w-20 h-20 rounded-full overflow-hidden" /></div>
+
+                </div>
             </div>
         </SlideIn>
 
