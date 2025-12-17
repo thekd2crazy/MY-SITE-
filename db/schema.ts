@@ -9,6 +9,7 @@ export const tasksTable = pgTable('tasks', {
 export const blogsTable = pgTable('blogs', {
     id: uuid().defaultRandom().primaryKey(),
     title: text().notNull(),
+    content: text().notNull(),
     post: boolean().default(false).notNull(),
 
 })

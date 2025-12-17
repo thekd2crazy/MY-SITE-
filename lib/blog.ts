@@ -12,7 +12,7 @@ export async function getPosts() {
     return await db.select().from(blogsTable)  // renvoie une promesse . car la tâche prend du temps à être réaliser !
 }
 
-export async function getPost(id: number) { // est définit comme un string UUID 
+export async function getPost(id: string) { // est définit comme un string UUID 
     return await db.select()
         .from(blogsTable)
         .where(eq(blogsTable.id, String(id)))
@@ -23,6 +23,7 @@ export async function createPost(form: FormData) {
     await db.insert(blogsTable)             // pas besoin de return lorsque le redirect est là ?
         .values({
             title: String(form.get('title')),
+            content: String(form.get('content')),
             post: false
         })
     redirect((await headers()).get('referer') ?? '/')
@@ -33,16 +34,24 @@ export async function editPost(form: FormData) {
         .update(blogsTable)
         .set({
             title: String(form.get('title')),
-            post: form.get('post') === 'on'
+            post: form.get('post') === 'on',
         })
         .where(eq(blogsTable.id, String(form.get('id')))) // pour eq(), id doit être en String
-
+    redirect((await headers()).get('referer') ?? '/')    
 }
 
-export async function deletePost(id: number) {
+export async function deletePost(id: string) {
     await db
         .delete(blogsTable)
         .where(eq(blogsTable.id, String(id)))
     redirect((await headers()).get('referer') ?? '/')
 }
+
+
+
+
+
+
+
+
 

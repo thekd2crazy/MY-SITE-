@@ -16,7 +16,7 @@ export default function Contact() {
         message: "",
     });
 
-    // handleChange is for inputs / textarea
+    // handleChange est pour les zones d'entrer de texte 
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => {
@@ -25,7 +25,7 @@ export default function Contact() {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    // handleSubmit is for the form submit
+    // handleSubmit est pour le formulaire 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log(formData);
