@@ -24,7 +24,7 @@ export default async function BlogEditor() {
                     name="content"
                     rows={9}
                     placeholder="Contenu de l’article"
-                    className="w-full rounded-lg border p-3 bg-amber-100"
+                    className="w-full rounded-lg border p-3 bg-amber-100 text-black"
                 />
 
                 <button
