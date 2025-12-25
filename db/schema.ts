@@ -19,3 +19,4 @@ export const usersTable = pgTable('users', {
     login: text().notNull().unique(),
     password: text().notNull(),
 })
+
