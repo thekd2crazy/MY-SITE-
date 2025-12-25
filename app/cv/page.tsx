@@ -1,6 +1,7 @@
 'user client'
 import CvEntry from "../components/CvEntry";
 import Logos from "../components/Logos";
+import TypingEffect from "../components/TypingEffet";
 
 
 export default function CV() {
@@ -10,7 +11,7 @@ export default function CV() {
 
             <section className="max-w-7xl mx-auto px-6 py-9 space-y-4">
 
-                <h1 className="text-center text-white font-bold text-6xl"> Curriculum Vitae </h1>
+                <h1 className="text-center text-white font-bold text-6xl"> <TypingEffect text="Curriculum Vitae" /> </h1>
                 <CvEntry title="Intrapreneur " employer="Danemo" image="https://tse3.mm.bing.net/th/id/OIP.wxwF6whYNzvR4qCv08Im6AHaFP?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=474&h=335&rs=1&o=7&rm=3">
 
                     <li>

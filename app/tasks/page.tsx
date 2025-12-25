@@ -1,5 +1,6 @@
 import { addTask, editTask, getTasks, removeTask } from '@/lib/tasks'
 import { FiPlus, FiTrash2, FiEdit } from 'react-icons/fi'
+import TypingEffect from '../components/TypingEffet'
 
 export default async function TodoApp() {
 
@@ -8,7 +9,7 @@ export default async function TodoApp() {
     return (
         <section className="max-w-2xl mx-auto px-6 py-9 space-y-5">
             <h1 className="text-3xl font-bold text-center text-amber-500 ">
-                TO DO LIST
+                <TypingEffect text='TO DO LIST' />
             </h1>
 
             {/*Add task */}
